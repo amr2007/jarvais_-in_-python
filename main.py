@@ -6,8 +6,8 @@ import requests
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "90a29555e68441fdb0f4d2746b289748"
-
+newsapi = "your api key "
+# you can get this on https://newsapi.org this website
 def speak(text):
     engine.say(text)
     engine.runAndWait()
@@ -21,7 +21,7 @@ def processCommand(c):
     elif "open instagram" in c.lower():
         webbrowser.open("https://www.instagram.com")
     elif "open github" in c.lower():
-        webbrowser.open("https://github.com/CodeWithHarry/The-Ultimate-Python-Course/tree/main")
+        webbrowser.open("https://github.com")
     elif "open youtube" in c.lower():
         webbrowser.open("https://www.youtube.com")
     elif "open whatsapp" in c.lower():
